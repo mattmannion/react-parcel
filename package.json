@@ -4,6 +4,7 @@
   "description": "react parcel custom build",
   "main": "src/html/index.html",
   "scripts": {
+    "fad": "find . -name \".gitkeep\" -type f -delete",
     "rf:d": "rimraf dist/*",
     "rf:c": "rimraf .cache/*",
     "parcel:d": "parcel src/html/index.html",
