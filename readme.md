@@ -2,13 +2,13 @@ Matt Mannion's React App setup w/ Parcel and Sass.
 
 run this "find and delete script" in terminal to remove .gitkeep placeholders:
 
-- find . -name ".gitkeep" -type f -delete
+- find . -name ".gitkeep" -type f -delete ["fad" - find and delete]
   - !! make EXTREMELY sure that you are in the project root !!
 
 go through file structure and check file setup:
 
 - adjust .gitignore
-- run "find and delete script"
+- run "npm run fad"
 - index.html
 - index.jsx
 - app.jsx
