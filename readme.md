@@ -1,24 +1,22 @@
 Matt Mannion's React App setup w/ Parcel and Sass.
 
-run this "find and delete script" in terminal to remove .gitkeep placeholders:
+run "setup" command to remove .gitkeep placeholders and .git. it will also do a "git init" and a "npm i" for you. hopefully this is a smooth start.
 
-- find . -name ".gitkeep" -type f -delete ["fad" - find and delete]
-  - !! make EXTREMELY sure that you are in the project root !!
-
-go through file structure and check file setup:
+new project checklist:
 
 - adjust .gitignore
-- run "npm run fad"
-- index.html
-- index.jsx
-- app.jsx
-- imports.scss [main scss file]
+  -check the following files:
 
-  - [file structure is mostly complete with empty folders ready for use]
+  - index.html
+  - index.jsx
+  - app.jsx
+  - imports.scss [main scss file]
 
-  - [be sure to check the sass files in the folders utils and base to be sure they match your needs]
+    - [file structure is mostly complete with empty folders ready for use]
 
-  - [NOTE] imports.scss has in its own folder to fix an intellisense bug where the path choosen by vscode is invalid at compilation. by having this file in its own folder [at the same level as the other folders] ensures proper intellisense for your files.
+    - [be sure to check the sass files in the folders utils and base to be sure they match your needs]
+
+    - [NOTE] imports.scss has in its own folder to fix an intellisense bug where the path choosen by vscode is invalid at compilation. by having this file in its own folder [at the same level as the other folders] ensures proper intellisense for your files.
 
 packages installed globally:
 [install these with "npm i -D <pkg>" if you want them in your project locally]

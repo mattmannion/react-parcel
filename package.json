@@ -4,13 +4,13 @@
   "description": "react parcel custom build",
   "main": "src/html/index.html",
   "scripts": {
-    "fad": "find . -name \".gitkeep\" -type f -delete",
     "rf:d": "rimraf dist/*",
     "rf:c": "rimraf .cache/*",
     "parcel:d": "parcel src/html/index.html",
     "parcel:p": "parcel build src/html/index.html --no-cache",
     "start": "run-s rf:d parcel:d",
-    "build": "run-s rf:d rf:c parcel:p"
+    "build": "run-s rf:d rf:c parcel:p",
+    "setup": "find . -name \".gitkeep\" -type f -delete && rm -rf .git && git init && npm i"
   },
   "author": "Matt Mannion",
   "license": "ISC",
