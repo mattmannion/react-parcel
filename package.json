@@ -1,0 +1,60 @@
+{
+  "name": "react-parcel",
+  "version": "2.0.0",
+  "description": "react parcel custom build",
+  "main": "src/html/index.html",
+  "scripts": {
+    "rf:d": "rimraf dist/*",
+    "rf:c": "rimraf .cache/*",
+    "parcel:d": "parcel src/html/index.html",
+    "parcel:p": "parcel build src/html/index.html --no-cache",
+    "start": "run-s rf:d parcel:d",
+    "build": "run-s rf:d rf:c parcel:p"
+  },
+  "author": "Matt Mannion",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "autoprefixer": "^10.2.1",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.2.3",
+    "sass": "^1.30.0"
+  },
+  "dependencies": {
+    "core-js": "^3.8.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "sass": {
+    "incluePaths": [
+      "node_modules"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": true
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      "defaults",
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
