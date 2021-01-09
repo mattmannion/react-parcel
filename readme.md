@@ -27,3 +27,11 @@ packages installed globally:
 - rimraf for clearing dist/ and .cache/ for a clean build each time.
 
 this repo is for my personal use only and is a WIP at all times. use if you'd like but i'm not responsible for any bugs, or problems found therein. thanks.
+
+options for parcel:d/:p:
+[add at the end after file path]
+
+- --open - opens window on server start
+- --no-cache - creates no cache
+
+- more to be added here
